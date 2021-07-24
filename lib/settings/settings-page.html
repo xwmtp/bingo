@@ -16,14 +16,14 @@
 
         <h2>General</h2>
 
-        <label for="language" class="setting">Language:
+        <label for="language">Language:
             <select id="language" width=800px>
                 <option value="en">English</option>
                 <option value="jp">Japanese</option>
             </select>
         </label>
 
-        <label for="boardTheme" class="setting">Layout theme:
+        <label for="boardTheme">Layout theme:
             <select id="boardTheme">
                 <option value="classic">Classic</option>
                 <option value="modern">Modern</option>
@@ -32,55 +32,72 @@
 
         <h2>Board popouts</h2>
 
-        <label for="boardPopoutWidth" class="setting">Width:
-            <input id="boardPopoutWidth" class="num-input" type="number" min=500 max=1000 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <div class='setting'>
+            <label for="boardPopoutWidth">Width:
+                <input id="boardPopoutWidth" class="num-input" type="number" min=500 max=1000 maxlength=4
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </label>
+        </div>
+
+        <div class='setting'>
+            <label for=boardPopoutHeight">Height:
+                <input id="boardPopoutHeight" class="num-input" type="number" min=450 max=1500 maxlength=4
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </label>
+        </div>
+
+        <div class='setting'>
+            <label for=boardPopoutFontSize">Font size:
+                <input id="boardPopoutFontSize" class="num-input" type="number" min=8 max=25 maxlength=2
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </label>
+        </div>
+
+        <div class='setting'>
+            <label class="suuscheckbox" for="boardBlackoutTracker">Tracker for blackouts:
+                <input id="boardBlackoutTracker" type="checkbox" />
+                <div class=' check'></div>
+            </label>
+        </div>
+
         </label>
 
-        <label for=boardPopoutHeight" class="setting">Height:
-            <input id="boardPopoutHeight" class="num-input" type="number" min=450 max=1500 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
-
-        <label for=boardPopoutFontSize" class="setting">Font size:
-            <input id="boardPopoutFontSize" class="num-input" type="number" min=8 max=25 maxlength=2
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
-
-        <label for="boardBlackoutTracker" class="setting">Tracker for blackouts:
-            <select id="boardBlackoutTracker">
-                <option value="enabled">Enabled</option>
-                <option value="disabled">Disabled</option>
-            </select>
-        </label>
-
-        <label for=boardPopoutIconSize" class="setting">Tracker icon size:
+        <div class='setting'>
+            <label for=boardPopoutIconSize">Tracker icon size: </label>
             <input id="boardPopoutIconSize" class="num-input" type="number" min=12 max=28 maxlength=2
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
-        
+        </div>
+
 
         <h2>Row popouts</h2>
 
-        <label for="rowPopoutWidth" class="setting">Width:
-            <input id="rowPopoutWidth" class="num-input" type="number" min=200 max=1000 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+        <div class='setting'>
+            <label for="rowPopoutWidth">Width:
+                <input id="rowPopoutWidth" class="num-input" type="number" min=200 max=1000 maxlength=4
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </label>
+        </div>
 
-        <label for=rowPopoutHeight" class="setting">Height:
-            <input id="rowPopoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+        <div class='setting'>
+            <label for=rowPopoutHeight">Height:
+                <input id="rowPopoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </label>
+        </div>
 
-        <label for=rowPopoutFontSize" class="setting">Font size:
-            <input id="rowPopoutFontSize" class="num-input" type="number" min=12 max=50 maxlength=2
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+        <div class='setting'>
+            <label for=rowPopoutFontSize">Font size:
+                <input id="rowPopoutFontSize" class="num-input" type="number" min=12 max=50 maxlength=2
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </label>
+        </div>
 
-        <label for=rowPopoutIconSize" class="setting">Tracker icon size:
-            <input id="rowPopoutIconSize" class="num-input" type="number" min=20 max=60 maxlength=2
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+        <div class='setting'>
+            <label for=rowPopoutIconSize">Tracker icon size:
+                <input id="rowPopoutIconSize" class="num-input" type="number" min=20 max=60 maxlength=2
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </label>
+        </div>
     </form>
 
     <div id="save-button" class="button">Save and go back</div>

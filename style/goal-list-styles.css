@@ -1,0 +1,27 @@
+.container {
+  width: auto;
+}
+
+.goal-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+span {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.goal {
+  font-size: 1.3rem;
+  list-style-type: none;
+}
